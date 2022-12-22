@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 @import url("https://www.1001fonts.com/gunplay-font.html");
 @import url("https://www.1001fonts.com/fun-games-font.html?size=66");
 @font-face {
@@ -8,170 +11,247 @@
   font-family: fun-games;
   src: url("fun-games.regular.ttf");
 }
-@media screen and (max-width: 3000px) {
+
+header {
+  background-color: #245c09;
+  top: 0;
+  display: flex;
+  height: 120px;
+}
+
+#logo {
+  width: 120px;
+  height: 120px;
+  margin: 0px 10px;
+}
+.Den-diven-längst-upp-i-mitten {
+  padding-left: 80px;
+}
+h1 {
+  text-shadow: rgb(102, 63, 63);
+  color: rgb(151, 153, 8);
+  font-family: "fun-games";
+  margin-bottom: 10px;
+  margin-left: 30px;
+  padding: 20px 100px 0px 0px;
+}
+#topp-länkar {
+  padding-top: 15px;
+}
+.länk {
+  margin: 0 5px;
+  color: rgb(151, 153, 8);
+  text-decoration: none;
+  transition: all 100ms;
+}
+.länk:hover {
+  font-size: 15px;
+  transform: scale(1.1);
+  border-bottom: 4px solid rgb(151, 153, 8);
+}
+.fa-solid {
+  color: rgb(151, 153, 8);
+}
+.fa-cart-shopping {
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: 68px;
+}
+.fa-cart-shopping:hover {
+  cursor: pointer;
+  text-shadow: 3px 2px black;
+  transition: all 100ms;
+}
+
+.den-naven-under-header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 30px;
+  background-color: rgba(27, 25, 25, 0.993);
+  color: wheat;
+  border-top: 4px solid rgb(151, 153, 8);
+}
+.items-in-nav {
+  padding: 5px 30px 5px 30px;
+}
+.items-in-nav:hover {
+  transition: 0.2s;
+  color: rgb(245, 245, 245);
+  background-color: rgb(82, 79, 73);
+  font-size: larger;
+}
+.search {
+  float: right;
+  margin: 65px 0px 0px 65px;
+}
+
+.search button {
+  background-color: rgb(151, 153, 8);
+  float: right;
+  padding: 8px 10px;
+  margin-right: 16px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+.search button:hover {
+  color: white;
+}
+.search input {
+  background-color: rgb(34, 43, 43);
+  color: white;
+  padding: 7px 210px 5px 22px;
+  border: 4px solid rgb(151, 153, 8);
+}
+/* här nedan är det css-egenskaper till slider-diven*/
+.slider {
+  width: 1800px;
+  height: 600px;
+  background-color: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.image-container {
+  width: calc(1800px * 3);
+  height: 600px;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+.slide {
+  width: 1800px;
+  height: 600px;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+#slide-2:target ~ .image-container {
+  left: -1800px;
+}
+#slide-3:target ~ .image-container {
+  left: -3600px;
+}
+.buttons {
+  position: relative;
+  top: -40px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: rgb(48, 50, 52);
+}
+.top-produkter {
+  width: 1800px;
+  text-align: center;
+  height: 200px;
+  background-color: #245c09;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.footer {
+  width: 1800px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #245c09;
+}
+/*mobilsskärm */
+@media screen and (max-width: 400px) {
+  body {
+    background-color: red;
+  }
   header {
     background-color: #245c09;
     top: 0;
+    width: 100vw;
     display: flex;
     height: 120px;
-  }
-
-  #logo {
-    width: 120px;
-    height: 120px;
-    margin: 0px 10px;
-  }
-  .Den-diven-längst-upp-i-mitten {
-    padding-left: 80px;
-  }
-  h1 {
-    text-shadow: rgb(102, 63, 63);
-    color: rgb(151, 153, 8);
-    font-family: "fun-games";
-    margin-bottom: 10px;
-    padding: 0px 100px 0px 0px;
-  }
-  #topp-länkar {
-    padding-top: 15px;
-  }
-  .länk {
-    margin: 0 5px;
-    color: rgb(151, 153, 8);
-    text-decoration: none;
-    transition: all 100ms;
-  }
-  .länk:hover {
-    font-size: 15px;
-    transform: scale(1.1);
-    border-bottom: 4px solid rgb(151, 153, 8);
-  }
-  .fa-solid {
-    color: rgb(151, 153, 8);
   }
   .den-naven-under-header {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    height: 30px;
-    background-color: rgba(27, 25, 25, 0.993);
-    color: wheat;
-    border-top: 4px solid rgb(151, 153, 8);
+    width: 100vw;
   }
-  .items-in-nav {
-    padding: 5px 30px 5px 30px;
+  .Den-diven-längst-upp-i-mitten {
+    padding-left: 20px;
   }
-  .items-in-nav:hover {
-    transition: 0.2s;
-    color: rgb(245, 245, 245);
-    background-color: rgb(82, 79, 73);
-    font-size: larger;
+  #topp-länkar {
+    display: none;
   }
   .search {
-    float: right;
-    margin: 65px 0px 0px 65px;
+    display: none;
+  }
+  .fa-cart-shopping {
+    display: none;
+  }
+  .slider {
+    width: 100vw;
+    /* height: 600px; */
+    height: auto;
+    background-color: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: calc(390px * 3);
+    height: auto;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+  .slide {
+    width: 100vw;
+    height: 40vh;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  #slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  #slide-2:target ~ .image-container {
+    left: -390px;
+  }
+  #slide-3:target ~ .image-container {
+    left: -780px;
+  }
+  .top-produkter {
+    width: 100vw;
+    text-align: center;
+    height: 200px;
+    background-color: #245c09;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
   }
 
-  .search button {
-    background-color: rgb(151, 153, 8);
-    float: right;
-    padding: 8px 10px;
-    margin-right: 16px;
-    font-size: 12px;
-    border: none;
-    cursor: pointer;
-  }
-  .search button:hover {
-    color: white;
-  }
-  .search input {
-    background-color: rgb(34, 43, 43);
-    color: white;
-    padding: 5px 210px 5px 20px;
-    border: 4px solid rgb(151, 153, 8);
+  .footer {
+    width: 100vw;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #245c09;
   }
 }
-
-/* .logo1 {
-  display: block;
-  width: 70px;
-  height: 90px;
-  position: absolute;
-  left: 0;
-  background-color: transparent;
-  text-align: center;
-}
-.img-logo {
-  margin-top: 18px;
-  height: 140px;
-}
-
-.om {
-  font-family: "Arial", serif;
-  font-size: 12px;
-  color: #8c8c8e;
-  text-transform: uppercase;
-  text-decoration: none; */
-/* margin: 18px; */
-/* margin-bottom: 20px; */
-/* transform: all 100ms;
-}
-
-.om:hover {
-  transition: 0.3s;
-  transform: scale(1.5);
-}
-
-h1 {
-  text-align: center;
-  background-color: yellow;
-  width: 100%;
-  padding: 10px 60px;
-}
-
-.skänk-link {
-  width: 72px;
-  text-align: center;
-  position: absolute;
-  right: 15px;
-  top: 14px;
-  z-index: 1;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  color: rgb(161, 130, 130);
-  text-decoration: none;
-  padding-bottom: 6px;
-  border-bottom: 2px solid rgba(255, 255, 255);
-}
-
-.img-bokmärke {
-  transition: 0.1s;
-  margin-top: 18px;
-  height: 179px;
-  width: 400px;
-  display: block;
-  margin-left: 920px;
-  background-color: transparent;
-  position: fixed;
-}
-.img-bokmärke:hover {
-  height: 300px;
-}
-.logo {
-  width: 33%;
-}
-.mitten {
-  top: 0;
-  height: 50%;
-  width: 33%;
-  display: flex;
-  align-content: space-between;
-  justify-content: center;
-}
-.bokmärke {
-  width: 33%;
-}
-
-.länkar {
-  width: 33%;
-  height: 50%;
-} */
