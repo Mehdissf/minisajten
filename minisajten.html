@@ -9,20 +9,24 @@
       crossorigin="anonymous"
     ></script>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="menu_icon.css" />
     <link rel="stylesheet" href="minisajten.css" />
+    <link rel="stylesheet" href="icke_viktiga_css.css" />
     <title>Piratsidan</title>
   </head>
   <body>
     <header>
-      <img id="logo" src="logo1.png" />
+      <img id="logo" src="bilder/logo1.png" />
       <div class="Den-diven-längst-upp-i-mitten">
-        <nav id="topp-länkar">
-          <a href="#" class="länk">Om oss</a>
-          <i class="fa-solid fa-circle-info"></i>
-          <a href="#" class="länk">Bli medlem</a>
-          <i class="fa-solid fa-user-plus"></i>
-          <a href="#" class="länk">Logga in</a>
-          <i class="fa-solid fa-right-to-bracket"></i>
+        <nav>
+          <ul id="topp-länkar">
+            <a href="#" class="länk">Om oss</a>
+            <i class="fa-solid fa-circle-info"></i>
+            <a href="#" class="länk">Bli medlem</a>
+            <i class="fa-solid fa-user-plus"></i>
+            <a href="#" class="länk">Logga in</a>
+            <i class="fa-solid fa-right-to-bracket"></i>
+          </ul>
         </nav>
         <h1>Pirat sidan</h1>
       </div>
@@ -35,20 +39,37 @@
         </form>
       </div>
       <i href="#" class="fa-solid fa-cart-shopping"></i>
+      <a href="#" class="kontakta">Kontakta oss</a>
+      <!-- Stil för hamburgarmenyn taget från 3wschools-->
+      <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()">
+        <i class="fa-solid fa-bars"></i>
+      </a>
     </header>
-    <nav class="den-naven-under-header">
-      <a class="items-in-nav första">Länk1</a>
-      <a class="items-in-nav andra">Länk2</a>
-      <a class="items-in-nav tredje">Länk3</a>
+    <nav>
+      <ul class="den-naven-under-header">
+        <a class="items-in-nav första">Länk1</a>
+        <a class="items-in-nav andra">Länk2</a>
+        <a class="items-in-nav tredje">Länk3</a>
+      </ul>
     </nav>
     <div class="slider">
       <span id="slide-1"></span>
       <span id="slide-2"></span>
       <span id="slide-3"></span>
       <div class="image-container">
-        <img src="piratescen.jpg" class="slide" />
-        <img src="Gucci.jpg" class="slide" />
-        <img src="boss.jpg" class="slide" />
+        <img src="bilder/piratescen.jpg" class="slide" />
+        <div class="välkommen">Välkommen till Piratsidan</div>
+        <div class="Beskrivning">
+          Det ultimata stället för att hitta de allra
+          <br />
+          bästa produkterna till låga priser. Vi har ett enormt utbud av stulna
+          <br />
+          varor från världens mest eftertraktade varumärken, allt från lyxigt
+          <br />
+          mode till elektronik och hemprodukter.
+        </div>
+        <img src="bilder/Gucci.jpg" class="slide" />
+        <img src="bilder/boss.jpg" class="slide" />
       </div>
       <div class="buttons">
         <a href="#slide-1"></a>
@@ -57,11 +78,28 @@
       </div>
     </div>
     <div class="top-produkter">
-      <div></div>
-      <div></div>
+      <div>
+        <h4>våra mest sålda produkter</h4>
+      </div>
+      <a href="#">Bild</a>
+      <a href="#">Bild</a>
+      <a href="#">Bild</a>
+      <a href="#">Bild</a>
+      <a href="#">Bild</a>
     </div>
+
     <footer class="footer">
       <div></div>
     </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>

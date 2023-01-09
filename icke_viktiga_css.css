@@ -1,0 +1,32 @@
+@import url("https://www.1001fonts.com/gunplay-font.html");
+@import url("https://www.1001fonts.com/fun-games-font.html?size=66");
+@font-face {
+  font-family: gunplay;
+  src: url("gunplay rg.ttf");
+}
+@font-face {
+  font-family: fun-games;
+  src: url("fun-games.regular.ttf");
+}
+
+/* Beskrivningar */
+.Beskrivning {
+  position: absolute;
+  top: 235px;
+  left: 45vw;
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  font-family: "gunplay";
+}
+
+.välkommen {
+  top: 75px;
+  left: 56vw;
+  font-size: 48px;
+  position: absolute;
+  font-family: "gunplay";
+}
+.välkommen:hover {
+  text-shadow: 6px 4px rgb(150, 149, 149);
+  transition: all 200ms;
+}
