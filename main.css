@@ -1,0 +1,72 @@
+.slider {
+  width: 100vw;
+  height: auto;
+  background-color: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.image-container {
+  width: calc(100vw * 3);
+  height: 800px;
+  clear: both;
+  position: relative;
+  transition: left 2s;
+}
+.slide {
+  width: 100vw;
+  height: 800px;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+#slide-2:target ~ .image-container {
+  left: -100vw;
+}
+#slide-3:target ~ .image-container {
+  left: -200vw;
+}
+.buttons {
+  position: relative;
+  top: -40px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: rgb(48, 50, 52);
+}
+
+/* här nedan är det css-egenskaper till slider-diven*/
+
+.top-produkter {
+  display: flex;
+  width: 100vw;
+  height: 200px;
+  padding: 6rem 0;
+  background-color: #14171f;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+  overflow: auto;
+  align-items: center;
+}
+div.top-produkter h4 {
+  text-align: center;
+  font-size: larger;
+  color: rgb(151, 153, 8);
+  width: 400px;
+  height: 180px;
+  padding-top: 150px;
+}
+div.top-produkter a {
+  display: inline-block;
+  padding: 10px;
+}

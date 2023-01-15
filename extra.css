@@ -22,11 +22,25 @@
 .välkommen {
   top: 75px;
   left: 56vw;
-  font-size: 48px;
+  font-size: 60px;
   position: absolute;
   font-family: "gunplay";
+  -webkit-box-reflect: below -10px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
 }
-.välkommen:hover {
-  text-shadow: 6px 4px rgb(150, 149, 149);
-  transition: all 200ms;
+
+.välkommen span {
+  display: inline-block;
+  color: black;
+  animation: våg 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes våg {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
 }

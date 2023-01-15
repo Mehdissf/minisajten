@@ -1,0 +1,130 @@
+@import url("https://www.1001fonts.com/gunplay-font.html");
+@import url("https://www.1001fonts.com/fun-games-font.html?size=66");
+@font-face {
+  font-family: gunplay;
+  src: url("gunplay rg.ttf");
+}
+@font-face {
+  font-family: fun-games;
+  src: url("fun-games.regular.ttf");
+}
+@import url("https://www.1001fonts.com/gunplay-font.html");
+@import url("https://www.1001fonts.com/fun-games-font.html?size=66");
+@font-face {
+  font-family: gunplay;
+  src: url("gunplay rg.ttf");
+}
+@font-face {
+  font-family: fun-games;
+  src: url("fun-games.regular.ttf");
+}
+
+header {
+  background-color: #14171f;
+  top: 0;
+  display: flex;
+  height: 120px;
+  width: 100%;
+}
+
+#logo {
+  width: 120px;
+  height: 120px;
+  margin: 0px 10px;
+}
+.Den-diven-längst-upp-i-mitten {
+  padding-left: 80px;
+}
+h1 {
+  text-shadow: rgb(102, 63, 63);
+  color: rgb(151, 153, 8);
+  font-family: "fun-games";
+  margin-bottom: 10px;
+  margin-left: 30px;
+  padding: 20px 100px 0px 0px;
+}
+
+#topp-länkar {
+  padding-top: 15px;
+}
+.länk {
+  margin: 0 5px;
+  color: rgb(151, 153, 8);
+  text-decoration: none;
+  transition: all 100ms;
+}
+.länk:hover {
+  font-size: 15px;
+  transform: scale(1.1);
+  border-bottom: 4px solid rgb(151, 153, 8);
+}
+.fa-solid {
+  color: rgb(151, 153, 8);
+}
+.fa-cart-shopping {
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: 68px;
+}
+.fa-cart-shopping:hover {
+  cursor: pointer;
+  text-shadow: 3px 2px black;
+  transition: all 100ms;
+}
+.kontakta {
+  color: rgb(151, 153, 8);
+  text-decoration: none;
+  padding: 10px;
+  padding-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  margin-left: 280px;
+  font-family: "gunplay";
+  font-size: 18px;
+}
+.kontakta:hover {
+  transition: all 200ms;
+  border: 5px solid rgb(151, 153, 8);
+}
+
+.den-naven-under-header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 30px;
+  background-color: rgba(54, 50, 50, 0.993);
+  color: wheat;
+  border-top: 4px solid rgb(151, 153, 8);
+}
+.items-in-nav {
+  padding: 5px 30px 5px 30px;
+}
+.items-in-nav:hover {
+  transition: 0.2s;
+  color: rgb(245, 245, 245);
+  background-color: rgb(82, 79, 73);
+  font-size: larger;
+}
+.search {
+  float: right;
+  margin: 65px 0px 0px 65px;
+}
+
+.search button {
+  background-color: rgb(151, 153, 8);
+  float: right;
+  padding: 8px 10px;
+  margin-right: 16px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+.search button:hover {
+  color: white;
+}
+.search input {
+  background-color: rgb(34, 43, 43);
+  color: white;
+  padding: 7px 210px 5px 22px;
+  border: 4px solid rgb(151, 153, 8);
+}
