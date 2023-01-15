@@ -4,6 +4,7 @@
 body {
   max-width: 100%;
   overflow-x: hidden;
+  background-color: rgb(16, 15, 15);
 }
 @import url("https://www.1001fonts.com/gunplay-font.html");
 @import url("https://www.1001fonts.com/fun-games-font.html?size=66");
@@ -67,13 +68,28 @@ h1 {
   text-shadow: 3px 2px black;
   transition: all 100ms;
 }
+.kontakta {
+  color: rgb(151, 153, 8);
+  text-decoration: none;
+  padding: 10px;
+  padding-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  margin-left: 280px;
+  font-family: "gunplay";
+  font-size: 18px;
+}
+.kontakta:hover {
+  transition: all 200ms;
+  border: 5px solid rgb(151, 153, 8);
+}
 
 .den-naven-under-header {
   display: flex;
   justify-content: flex-start;
   width: 100%;
   height: 30px;
-  background-color: rgba(27, 25, 25, 0.993);
+  background-color: rgba(54, 50, 50, 0.993);
   color: wheat;
   border-top: 4px solid rgb(151, 153, 8);
 }
@@ -122,14 +138,14 @@ h1 {
 }
 .image-container {
   width: calc(100vw * 3);
-  height: 600px;
+  height: 800px;
   clear: both;
   position: relative;
   transition: left 2s;
 }
 .slide {
   width: 100vw;
-  height: 600px;
+  height: 800px;
   float: left;
   margin: 0px;
   padding: 0px;
