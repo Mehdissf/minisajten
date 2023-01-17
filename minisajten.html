@@ -41,15 +41,15 @@
             <i class="fa fa-search" style="font-size: 18px"> </i>
           </button>
         </form>
+        <i href="#" class="fa-solid fa-cart-shopping"></i>
       </div>
-      <i href="#" class="fa-solid fa-cart-shopping"></i>
       <!-- <a href="#" class="kontakta">Kontakta oss</a> -->
       <!-- Stil för hamburgarmenyn taget från 3wschools-->
       <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()">
         <i class="fa-solid fa-bars"></i>
       </a>
     </header>
-    <nav>
+    <nav class="nav">
       <ul class="den-naven-under-header">
         <a class="items-in-nav första">Länk1</a>
         <a class="items-in-nav andra">Länk2</a>
@@ -66,7 +66,6 @@
           <span style="--i: 1">V</span>
           <span style="--i: 2">ä</span>
           <span style="--i: 3">l</span>
-          <span style="--i: 4">l</span>
           <span style="--i: 5">k</span>
           <span style="--i: 6">o</span>
           <span style="--i: 7">m</span>
@@ -83,8 +82,10 @@
           <br />
           mode till elektronik och hemprodukter.
         </div>
-        <img src="bilder/Gucci.jpg" class="slide" />
-        <img src="bilder/boss.jpg" class="slide" />
+        <video autoplay muted loop class="slide">
+          <source src="bilder/Polo.mp4" type="video/mp4" />
+        </video>
+        <img src="bilder/playstation-5-fd-3840x2160.jpg" class="slide" />
       </div>
       <div class="buttons">
         <a href="#slide-1"></a>
@@ -93,16 +94,77 @@
       </div>
     </div>
     <div class="top-produkter">
-      <div>
-        <h4>våra mest sålda produkter</h4>
+      <div class="h4">
+        <h4>
+          ----------------------------------<br />Utvalda produkter för dig
+          <br />----------------------------------
+        </h4>
       </div>
-      <a href="#">Bild</a>
-      <a href="#">Bild</a>
-      <a href="#">Bild</a>
-      <a href="#">Bild</a>
-      <a href="#">Bild</a>
+      <a class="roller-container" href="#">
+        <img class="roller" src="bilder/roller2.webp" />
+      </a>
+      <a class="roller-container" href="#"
+        ><img class="roller" src="bilder/rolex.jpg"
+      /></a>
+      <div class="roll">
+        <div class="roll-header">
+          <h2>
+            ---------------------------<br />Explorer från Rolex
+            <br />---------------------------
+          </h2>
+        </div>
+        <p class="roll-text">
+          Explorer från Rolex skiner med sin eleganta och tidlösa design.<br />
+          Den svarta urtavlan har stora timmarkörer och den ikoniska 3-6-9
+          siffror <br />
+          vilket gör det lätt att läsa med en blick.
+        </p>
+        <div class="roll-footer">
+          <span>Pris: 2,000 kr</span>
+          <a href="#" class="btn">Lägg till kundvagnen</a>
+        </div>
+      </div>
+      <a class="roller-container polo" href="#">
+        <img class="roller" src="bilder/Polo.jpg" />
+      </a>
+      <div class="roll">
+        <div class="roll-header">
+          <h2>
+            ----------------------------------<br />Jacka från Ralph Lauren
+            <br />----------------------------------
+          </h2>
+        </div>
+        <p class="roll-text">
+          En konstfull blandning av vardagsklassiker: <br />avslappnat
+          skrädderi, mjuka stickningar <br />och förhöjda accessoarer
+        </p>
+        <div class="roll-footer">
+          <span>Pris: 500 kr</span>
+          <a href="#" class="btn">Lägg till kundvagnen</a>
+        </div>
+      </div>
+      <a class="roller-container" href="#">
+        <img class="roller" src="bilder/EmCpwNcXYAE_19y.jpg"
+      /></a>
+      <div class="roll">
+        <div class="roll-header">
+          <h2>
+            ---------------------------<br />Playstation 5
+            <br />---------------------------
+          </h2>
+        </div>
+        <p class="roll-text">
+          Upplev en helt ny generation av otroliga <br />PlayStation-spel.
+          PS5-konsoler finns för <br />närvarande i lager
+        </p>
+        <div class="roll-footer">
+          <span>Pris: 1000 kr</span>
+          <a href="#" class="btn">Lägg till kundvagnen</a>
+        </div>
+      </div>
     </div>
 
+    <!-- footer -->
     <footer class="footer">
       <div></div>
     </footer>

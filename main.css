@@ -47,26 +47,89 @@
 /* här nedan är det css-egenskaper till slider-diven*/
 
 .top-produkter {
+  overflow-y: hidden;
   display: flex;
   width: 100vw;
-  height: 200px;
+  height: 500px;
   padding: 6rem 0;
-  background-color: #14171f;
+  background-color: 14171f;
   margin-left: auto;
   margin-right: auto;
   white-space: nowrap;
   overflow: auto;
   align-items: center;
 }
+.h4 {
+  height: 100%;
+  width: 400px;
+  margin-right: 50px;
+  padding-left: 40px;
+}
 div.top-produkter h4 {
   text-align: center;
-  font-size: larger;
-  color: rgb(151, 153, 8);
-  width: 400px;
-  height: 180px;
-  padding-top: 150px;
+  font-size: 32px;
+  color: #fff;
 }
 div.top-produkter a {
   display: inline-block;
   padding: 10px;
+}
+.roller {
+  height: 483px;
+}
+.roller:hover {
+  transform: scale(1.04);
+  transition: all 500ms;
+}
+.roller-container {
+  height: 100%;
+}
+.roll {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 22px;
+  color: white;
+  width: 400px;
+  padding: 50px 50px 0 0;
+  margin: 0px 50px 0 50px;
+}
+
+.roll-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.roll-header h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.roll-text {
+  margin-top: 50px;
+}
+
+.roll-footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 10px 0 0;
+  color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+.polo {
+  position: relative;
+  margin-left: 250px;
 }
