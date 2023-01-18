@@ -10,12 +10,11 @@
     ></script>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="menu_icon.css" />
-    <link rel="stylesheet" href="minisajten.css" />
-    <link rel="stylesheet" href="extra.css" />
+    <link rel="stylesheet" href="body.css" />
+    <link rel="stylesheet" href="cool.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="footer.css" />
-
     <title>Piratsidan</title>
   </head>
   <body>
@@ -24,7 +23,7 @@
       <div class="Den-diven-längst-upp-i-mitten">
         <nav>
           <ul id="topp-länkar">
-            <a href="#" class="länk">Om oss</a>
+            <a href="om_oss.html" class="länk">Om oss</a>
             <i class="fa-solid fa-circle-info"></i>
             <a href="Bli_medlem.html" class="länk">Bli medlem</a>
             <i class="fa-solid fa-user-plus"></i>
@@ -32,7 +31,9 @@
             <i class="fa-solid fa-right-to-bracket"></i>
           </ul>
         </nav>
-        <h1>Pirat sidan</h1>
+        <a style="text-decoration: none" href="minisajten.html"
+          ><h1>Pirat sidan</h1></a
+        >
       </div>
       <div class="search">
         <form action="#">
@@ -43,19 +44,21 @@
         </form>
         <i href="#" class="fa-solid fa-cart-shopping"></i>
       </div>
-      <!-- <a href="#" class="kontakta">Kontakta oss</a> -->
-      <!-- Stil för hamburgarmenyn taget från 3wschools-->
       <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()">
         <i class="fa-solid fa-bars"></i>
       </a>
     </header>
+
+    <!-- nav -->
     <nav class="nav">
       <ul class="den-naven-under-header">
-        <a class="items-in-nav första">Länk1</a>
-        <a class="items-in-nav andra">Länk2</a>
-        <a class="items-in-nav tredje">Länk3</a>
+        <a class="items-in-nav första">Kläder</a>
+        <a class="items-in-nav andra">Dator</a>
+        <a class="items-in-nav tredje">Perfym</a>
       </ul>
     </nav>
+
+    <!-- slider -->
     <div class="slider">
       <span id="slide-1"></span>
       <span id="slide-2"></span>
@@ -93,6 +96,8 @@
         <a href="#slide-3"></a>
       </div>
     </div>
+
+    <!-- top-produkter -->
     <div class="top-produkter">
       <div class="h4">
         <h4>
@@ -158,7 +163,7 @@
           PS5-konsoler finns för <br />närvarande i lager
         </p>
         <div class="roll-footer">
-          <span>Pris: 1000 kr</span>
+          <span>Pris: 1,000 kr</span>
           <a href="#" class="btn">Lägg till kundvagnen</a>
         </div>
       </div>
@@ -166,17 +171,28 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div></div>
+      <div class="footer__container">
+        <div class="footer__logo-container">
+          <img id="logo-footer" src="bilder/logo1.png" alt="Logo" />
+        </div>
+        <div class="footer__contact-container">
+          <h7>Kontakta oss</h7>
+          <div class="footer__icon-container">
+            <a class="footer__icon">
+              <i class="fa fa-youtube fa-brand"></i>
+            </a>
+            <a class="footer__icon">
+              <i class="fa fa-snapchat-square fa-brand"></i>
+            </a>
+            <a class="footer__icon">
+              <i class="fa fa-envelope fa-regular"></i>
+            </a>
+            <a class="footer__icon">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-    </script>
   </body>
 </html>

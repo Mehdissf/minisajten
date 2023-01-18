@@ -63,7 +63,7 @@
   height: 100%;
   width: 400px;
   margin-right: 50px;
-  padding-left: 40px;
+  padding-left: 60px;
 }
 div.top-produkter h4 {
   text-align: center;
@@ -132,4 +132,120 @@ div.top-produkter a {
 .polo {
   position: relative;
   margin-left: 250px;
+}
+/* iPhad */
+@media screen and (max-width: 1024px) {
+  .välkommen {
+    left: 20vw;
+  }
+  .Beskrivning {
+    font-size: 20px;
+    left: 8vw;
+  }
+  footer {
+    padding: 0;
+    margin: 0;
+  }
+  .top-produkter {
+    margin: 0;
+    overflow-y: hidden;
+  }
+  .roller {
+    height: 100%;
+  }
+  .roller-container {
+    height: 100%;
+  }
+  .roll {
+    font-size: 22px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    margin-left: 40px;
+    margin-right: 60px;
+  }
+  .roll-header h2 {
+    font-size: 22px;
+    margin: 0;
+  }
+  .btn {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/*mobilsskärm iPhone 12 promax */
+@media screen and (max-width: 450px) {
+  footer {
+    padding: 0;
+    margin: 0;
+  }
+  .den-naven-under-header {
+    display: none;
+  }
+  .slider {
+    width: 100vw;
+    height: auto;
+    background-color: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: calc(100vw * 3);
+    height: 60vh;
+  }
+  .slide {
+    width: 100vw;
+    height: 60vh;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  #slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  #slide-2:target ~ .image-container {
+    left: -390px;
+  }
+  #slide-3:target ~ .image-container {
+    left: -780px;
+  }
+  #slide-2 {
+    width: 100vh;
+  }
+  .top-produkter {
+    width: 100vw;
+    text-align: center;
+    height: 200px;
+    background-color: #14171f;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    overflow-y: hidden;
+  }
+  .roll {
+    font-size: 22px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 60px;
+  }
+  .Beskrivning {
+    display: none;
+  }
+  .välkommen {
+    left: 8vw;
+    font-size: 42px;
+  }
+  .roll-text {
+    margin-top: 0;
+  }
+  .h4 {
+    padding-left: 30px;
+  }
 }
